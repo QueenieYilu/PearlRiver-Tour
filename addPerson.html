@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<title>document</title>
+</head>
+
+<body>
+	<header class="open-top">
+		<a href="#"><i></i></a>
+		<h3>订单信息</h3>
+		<a class="nth2"></a>
+	</header>
+	
+	<section>
+		<div class="wrap">
+			<p class="order-title">&emsp;订票信息</p>
+			<div class="order-info">
+				<div class="info-list">
+					<label class="left-label">乘客类型：</label>
+					<p class="right-details">
+						成人票
+						<i class="icon-more"></i>
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">乘客姓名：</label>
+					<p class="right-details">
+						<input type="text" class="txt-input"  placeholder="请输入证件上的姓名">
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">证件类型：</label>
+					<p class="right-details">
+						身份证
+						<i class="icon-more"></i> 
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">证件号码：</label>
+					<p class="right-details">
+						<input type="text" class="txt-input" placeholder="请输入证件号码">
+					</p>
+				</div>
+			</div>
+			<p class="order-title">&emsp;儿童信息（可不填）</p>
+			<div class="order-info">
+				<p class="free-child">是否携带免费儿童（1.2米以下/1位）
+					<label class="isChild-swicth">
+						<input type="checkbox" class="isChild" name="">
+						<span class="swicth-bg">
+							<i class="circle"></i>
+						</span>
+
+					</label>
+				</p>
+			</div>
+			<div class="order-list">
+				<p class="tips">购票实行船票实名制，请仔细检查您的姓名和身份证信息，确保真实、准确，以免无法取票</p>
+			</div>
+		</div>
+
+		<div class="btn-box">
+			<button type="button" class="btn" onclick="">确定</button>
+		</div>
+		
+	</section>
+	<div class="empty-box"></div>
+	<footer class="bottom-fixed">
+		<div class="fixed-entrance">
+			<a href="index.html">
+				<i class="icon-ticket" class="active"></i>
+				<p>购票</p>
+			</a>
+			<a href="#">
+				<i class="icon-scenery"></i>
+				<p>美景</p>
+			</a>
+			<a href="myCenter.html">
+				<i class="icon-myCenter"></i>
+				<p>我的</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script>
+	$(function(){
+	})
+</script>

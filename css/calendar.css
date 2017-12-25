@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+#checkinout{
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	margin: 10px;
+	padding: 2px 0;
+	display: -webkit-box;
+	display: flex;
+	border: 1px solid #e5e5e5;
+	border-radius: .02rem;
+	background-color: #fff;
+}
+#dateSelect{width:100%;}
+#dateSelect p{line-height:25px;color: #999;font-size:12px;text-align: center;}
+#startDate{border:0;position: absolute;left: 0;margin: 0 auto;width: 100%;font-size: 16px;color: #05c0ad;text-align: center;}
+.mask_calendar {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.4);
+	/*display: none;*/
+	z-index: 9999;
+}
+.calendar{
+	/*display: none;*/
+	position: fixed;
+	/*top: 100px;*/
+	bottom:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: #fff;
+	font-family: "Microsoft YaHei",Tahoma;
+	z-index: 999999999;
+}
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+.slideInDown {
+	animation-name: slideInDown;
+}
+.comfire{
+	height: 26px; 
+	line-height: 26px; 
+	width: 50px; 
+	color: rgb(46, 182, 168); 
+	position: absolute; 
+	right: 10px; 
+	text-align: center; 
+	font-size: 14px;
+	cursor: pointer; 
+	top: 11px; 
+	border: 1px solid rgb(46, 182, 168);
+	border-radius: 4px;
+}
+.selectDate{background: #2eb6a8!important;color:#fff!important;}
+.selectTd{border-radius:50%;}
+
+/*日历表格样式*/
+body td{
+	text-align:center;
+	height:40px;
+	}
+.dateZone{
+	width:100%;
+	margin:auto;
+	background:#2eb6a8;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+	color:#fff;
+	margin-top:0;
+	position: fixed;
+	z-index:9999;
+}
+.dateZone td{
+	background:#2eb6a8;
+	height:45px;
+	line-height: 45px;
+}
+.tbody {
+	margin-top: 51px;
+}
+.tbody td{
+	background:#fff;
+	color: #555;
+}
+.dateZone td{
+	width:14.2%;
+	font-size: 14px;
+}
+.dateZone .colo{
+	/*color:#fa967f;*/
+}
+.dateTable{
+	width:99.4%;
+	margin:auto;
+	border-bottom:1px solid #ddd;
+}
+.tbody .ny1{
+	/*width:100%;*/
+	/*text-align:center;*/
+	padding:5px 18px;
+	color: #555;
+	background-color: #FAFAFA;
+	/*border-bottom:1px solid #ddd;*/
+	font-size: 22px;    
+	line-height: 38px;
+}
+.dateTable td{
+	/*width:14.2%;*/
+	width:35px;
+	font-size: 14px;
+}
+.dateTable .rz{
+	font-size:14px;
+}
+.datTip{
+	background:rgba(0,153,255,0.8);
+	width:40%;
+	position:fixed;
+	bottom:2px;
+	left:30%;
+}
+.datTip p{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	color:#fff;
+	padding:3px 0;
+	font-size:14px;
+	}
+.rz{
+	position:relative;
+	/* display: none; */
+	background:#4370C5!important;
+	color:#fff!important;
+	border-radius:50%;
+	}
+.hover{
+	font-size:14px;
+	display:inline-block;
+	width:60%;
+	background:#FF3;
+	/* display: none; */
+	color:red;
+	text-align:center;
+	border-radius:5px;
+	}
+td{
+	border-radius:21px;
+	}
+/* section{
+	margin:10px;
+	padding:5px;
+	} */
+@media only screen and (min-width:400px){
+	body td{
+		text-align:center;
+		height:47px;
+	}
+}
+@media only screen and (max-width:320px){
+	body{
+		font-size:14px;
+	}
+	.dateTable .rz{
+		font-size:12px;
+	}
+	.datTip p{
+		font-size:12px;
+	}
+	.hover{
+		font-size:12px;
+	}
+	body td{
+		text-align:center;
+		/*height:35px;*/
+	}
+}

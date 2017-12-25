@@ -1,0 +1,51 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+	<div id="checkinout">
+		<div id="dateSelect">
+			<p>选择的日期</p>
+			<input id="startDate" type="text" value="" readonly="">
+		</div>
+	</div>
+	<div class="mask_calendar">
+		<div class="calendar"></div>			
+	</div>
+</body>	
+<script src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+<script>
+$(function(){
+	$('#dateSelect').on('click',function () {
+		$('.mask_calendar').show();
+	});
+	$('#dateSelect').calendarSwitch({
+		selectors : {
+			sections : ".calendar"
+		},
+        index : 4,      //展示的月份个数
+        controlDay:true,//是否控制在daysnumber天之内，这个数值的设置前提是总显示天数大于90天
+        daysnumber : "90",     //控制天数
+        outColor : "#2EB6A8",      //选中颜色
+        callback :function(){//回调函数
+//      	$('.mask_calendar').fadeOut(200);
+        	var startDate = $('#startDate').val(); 
+            console.log(startDate);
+            alert(startDate)
+        }
+	});
+	var b=new Date();
+    var ye=b.getFullYear();
+    var mo=b.getMonth()+1;
+    mo = mo<10?"0"+mo:mo;
+    var da=b.getDate();
+    da = da<10?"0"+da:da;
+    $('#startDate').val(ye+'-'+mo+'-'+da);
+});
+</script>
+
+
+</html>

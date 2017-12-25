@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<title>document</title>
+</head>
+
+<body>
+	<header class="open-top">
+		<a href="#"><i></i></a>
+		<h3>选择时间段</h3>
+		<a class="nth2"></a>
+	</header>
+	
+	<section>
+		<div class="order-wrap">
+			<div class="time-info">
+				<div class="info-group">
+					<div class="left-info">
+						<div class="start-point">
+							<p class="ship-time">04:00<span class="time-slot">pm</span></p>
+							<label>天字码头</label>
+						</div>
+						<i class="icon-ship"></i>
+						<div class="end-point">
+							<p class="ship-time">05:15<span class="time-slot">pm</span></p>
+							<label>天字码头</label>
+						</div>
+					</div>
+					<div class="right-info">
+						<p class="font-green">￥70元起</p>
+					</div>
+				</div>
+				<div class="info-group">
+					<div class="left-info">
+						<p class="seat-name">广发证券号informationT</p>
+					</div>	
+					<div class="right-info">
+						<input type="button" class="btn seat-btn" value="选择座位" />
+					</div>
+				</div>
+			</div>
+			<div class="time-info">
+				<div class="info-group">
+					<div class="left-info">
+						<div class="start-point">
+							<p class="ship-time">04:00<span class="time-slot">pm</span></p>
+							<label>天字码头</label>
+						</div>
+						<i class="icon-ship"></i>
+						<div class="end-point">
+							<p class="ship-time">05:15<span class="time-slot">pm</span></p>
+							<label>天字码头</label>
+						</div>
+					</div>
+					<div class="right-info">
+						<p class="font-green">￥70元起</p>
+					</div>
+				</div>
+				<div class="info-group">
+					<div class="left-info">
+						<p class="seat-name">广发证券号informationT</p>
+					</div>	
+					<div class="right-info">
+						<input type="button" class="btn seat-btn" value="选择座位" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="empty-box"></div>
+	<footer class="bottom-fixed">
+		<div class="fixed-entrance">
+			<a href="index.html">
+				<i class="icon-ticket"></i>
+				<p>购票</p>
+			</a>
+			<a href="#">
+				<i class="icon-scenery"></i>
+				<p>美景</p>
+			</a>
+			<a href="myCenter.html" class="active">
+				<i class="icon-myCenter"></i>
+				<p>我的</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
+

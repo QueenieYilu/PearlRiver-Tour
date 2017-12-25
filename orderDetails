@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link href="css/global.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<title>document</title>
+</head>
+
+<body>
+	<header class="open-top">
+		<a href="#"><i></i></a>
+		<h3>订单信息</h3>
+		<a class="nth2"></a>
+	</header>
+	
+	<section>
+		<div class="wrap">
+			<p class="order-title">&emsp;订票信息</p>
+			<div class="order-info">
+				<div class="info-list">
+					<label class="left-label">订单号：</label>
+					<p class="right-details">
+						201700000000000001
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">订单状态：</label>
+					<p class="right-details">
+						购票成功
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">下单时间：</label>
+					<p class="right-details">
+						2017-12-15 14:26:13
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">取票人：</label>
+					<p class="right-details">
+						蔡依林
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">联系电话：</label>
+					<p class="right-details">
+						13719192345
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">购票数：</label>
+					<p class="right-details">
+						1
+					</p>
+				</div>
+				<div class="info-list">
+					<label class="left-label">支付金额：</label>
+					<p class="right-details">
+						￥60.00
+					</p>
+				</div>
+			</div>
+			<p class="order-title">&emsp;船票信息</p>
+			<div class="order-info">
+				<div class="ship-ticket">
+					<p>2017-12-16 04:00pm&nbsp;天字码头&nbsp;兰花主题航线</p>
+					<p>日游&nbsp;水吧26（单程）共一张</p>
+				</div>
+				<div class="info-list seat-info">
+					<div class="info-group">
+						<div class="left-info">
+							<p>座位：1楼101桌</p>
+						</div>	
+						<div class="right-info txt-right">
+							<p>￥60.00</p>
+						</div>
+					</div>
+					<div class="info-group">
+						<div class="left-info">
+							<p>条码：1004000000</p>
+						</div>	
+						<div class="right-info txt-right">
+							<p>状态：已售</p>
+						</div>
+					</div>
+				</div>
+				<div class="QRcode">
+					<div class="QRcode-info">
+						<p class="ticket-num">票号：34535562523524</p>
+						<div class="qrcode-img">
+							<img src="images/qrcode.jpg" width="100%" height="100%" />
+						</div>
+						<p class="warm-tips">温馨提示：使用时建议您将手机屏幕调至最亮</p>
+					</div>
+				</div>
+			</div>
+			<div class="btn-box">
+				<button type="button" class="btn refund-btn" onclick="">退票</button>
+			</div>
+		</div>
+		
+	</section>
+	<div class="empty-box"></div>
+	<footer class="bottom-fixed">
+		<div class="fixed-entrance">
+			<a href="index.html">
+				<i class="icon-ticket" class="active"></i>
+				<p>购票</p>
+			</a>
+			<a href="#">
+				<i class="icon-scenery"></i>
+				<p>美景</p>
+			</a>
+			<a href="myCenter.html">
+				<i class="icon-myCenter"></i>
+				<p>我的</p>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>
